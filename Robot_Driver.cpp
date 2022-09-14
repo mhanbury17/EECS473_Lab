@@ -359,7 +359,7 @@ void HD44780_LCD::write_char(char c)
     {
         target |= 0x40;
     }
-    write_instruction(target);yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+    write_instruction(target);
     
     digitalWrite(REG_SEL, HIGH);
     write_instruction((int)c);
@@ -416,7 +416,6 @@ void HD44780_LCD::set_cursor(uint8_t x, uint8_t y)
 }
 
 /* -------------------- Main -------------------- */
-
 
 void setup(void)
 {
